@@ -1,0 +1,77 @@
+.opportunities-container {
+    .opportunities-container__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+.opportunities-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 160px;
+
+    .opportunities-item__img {
+        border-radius: 50%;
+    }
+
+}
+
+
+.opportunities-box {
+    &__heading {
+        padding: 0;
+        margin: 0;
+        font-style: normal;
+        font-family: Space Mono;
+        font-size: 48px;
+        font-weight: bold;
+        color: $dark-blue;
+        line-height: 48px;
+        max-width: 475px;
+        width: 100%;
+        padding-bottom: 24px;
+    }
+
+    &__desc {
+        margin: 0;
+        padding: 0;
+        font-family: Lexend Deca;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: $grey;
+        width: 100%;
+        max-width: 445px;
+        padding-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width:970px) {
+    .opportunities-item {
+        display: flex;
+        flex-direction: column-reverse;
+
+        &__img {
+            margin-bottom: 64px;
+        }
+
+    }
+
+    .opportunities-item:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .opportunities-box {
+        &__heading {
+            text-align: center;
+        }
+        
+        &__desc {
+            text-align: center;
+        }
+    }
+        
+}

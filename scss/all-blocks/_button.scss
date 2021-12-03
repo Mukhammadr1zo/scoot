@@ -18,6 +18,20 @@
     margin-bottom: 152px;
 }
 
+.button {
+    background-color: $dark-yellow;
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: $white;
+    padding: 14px 39px;
+    border: 2px solid $dark-yellow;
+    margin-left: auto;
+}
+
 .btn:hover {
     background-color: $white;
     color: $dark-yellow;
@@ -28,10 +42,27 @@
     color: $white;
 }
 
+
+.button:hover {
+    background-color: $white;
+    color: $dark-yellow;
+}
+
+.button:active {
+    background-color: $dark-yellow;
+    color: $white;
+}
 @media only screen and (max-width:1000px) {
     .btn2 {
         position: relative;
         left: 28%;
+    }
+}
+
+@media only screen and (max-width:970px) {
+    .button {
+        margin-left: 30%;
+       
     }
 }
 
