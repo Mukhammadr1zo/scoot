@@ -440,6 +440,12 @@ img {
   margin-left: auto;
 }
 
+.btn2 {
+  margin-left: 85px;
+  margin-top: 20px;
+  margin-bottom: 152px;
+}
+
 .btn:hover {
   background-color: #FFFFFF;
   color: #FCB72B;
@@ -448,6 +454,13 @@ img {
 .btn:active {
   background-color: #FCB72B;
   color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1000px) {
+  .btn2 {
+    position: relative;
+    left: 28%;
+  }
 }
 
 @media only screen and (max-width: 670px) {
@@ -459,10 +472,15 @@ img {
     bottom: 0;
     margin-top: 100%;
   }
+  .btn2 {
+    margin-top: -10px;
+    width: 200px;
+  }
 }
 
 .header {
   margin-top: 22px;
+  margin-bottom: 12px;
 }
 
 .header .logo {
@@ -492,6 +510,18 @@ img {
   background-repeat: no-repeat;
   width: 20px;
   height: 16px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header {
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .header {
+    margin-bottom: 52px;
+  }
 }
 
 @media only screen and (max-width: 670px) {
@@ -560,13 +590,15 @@ img {
 
 @media only screen and (max-width: 670px) {
   .sitenav {
+    position: absolute;
     margin-left: 0;
     display: none;
     background-color: #333A44;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 64px 32px 24px;
+    padding: 64px 32px 4px;
+    z-index: 1;
   }
   .sitenav__list {
     -webkit-box-align: start;
@@ -610,5 +642,153 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.hero {
+  margin: 0;
+  margin-bottom: 80px;
+  background-image: url(../../images/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.hero-container__heading {
+  margin: 0;
+  padding: 0;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  width: 100%;
+  max-width: 500px;
+  color: #FFFFFF;
+  padding-top: 153px;
+  padding-bottom: 20px;
+}
+
+.hero-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-info__divider {
+  margin-left: -172px;
+}
+
+.hero-info__desc {
+  margin: 0;
+  padding: 0;
+  font-family: Lexend Deca;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #FFFFFF;
+  padding-top: 20px;
+  padding-left: 57px;
+  padding-bottom: 20px;
+  width: 100%;
+  max-width: 460px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.hero-info__right-divider {
+  margin-top: 120px;
+  margin-left: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero {
+    margin-top: 20px;
+    background-image: url(../images/tablet-hero-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -32px;
+  }
+  .hero-container__heading {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .hero-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-info__desc {
+    text-align: center;
+  }
+  .hero-info__divider {
+    display: none;
+  }
+  .hero-info__right-divider {
+    position: absolute;
+    top: 60%;
+    left: -30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    margin-bottom: 80px;
+    background-image: url(../images/tablet-hero-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 514px) {
+  .hero-info__right-divider {
+    position: absolute;
+    top: 70%;
+    left: -50%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero-info {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hero-info__desc {
+    text-align: center;
+  }
+  .hero-info__divider {
+    display: none;
+  }
+  .hero-info__right-divider {
+    position: absolute;
+    top: 75%;
+    left: -73%;
+  }
+}
+
+@media only screen and (max-width: 367px) {
+  .hero-info__right-divider {
+    position: absolute;
+    top: 80%;
+    left: -80%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
