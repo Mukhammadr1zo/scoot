@@ -121,6 +121,14 @@
         background-size: cover;
 
     }
+
+    .hero-info {
+        &__right-divider {
+            position: absolute;
+            top: 65%;
+            left: -30%;
+        }
+    }
 }
 
 @media only screen and (max-width:514px){

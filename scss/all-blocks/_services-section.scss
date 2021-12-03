@@ -1,0 +1,128 @@
+.our-services {
+    padding-top: 80px;
+    background-image: url(../images/our-services-back.png);
+    background-repeat: no-repeat;
+    background-size: 974px 10px;
+}
+
+.services-container {
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        margin-top: -120px;
+        margin-bottom: 100px;
+    }
+
+    &__img {
+        margin-bottom: 40px;
+    }
+
+    &__item + &__item {
+        margin-left: 30px;
+    }
+    
+}
+
+.services-box {
+    &__heading {
+        margin: 0;
+        padding: 0;
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1px;
+        color: $dark-blue;
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 27px;
+    }
+
+    &__desc {
+        margin: 0;
+        padding: 0;
+        font-family: Lexend Deca;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        color: $grey;
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+
+    .our-services {
+        padding-top: 80px;
+        background-image: url(../images/our-services-back.png);
+        background-repeat: no-repeat;
+        background-size: 10px 974px;
+        background-position-x: 13%;
+        
+    }
+
+    .services-container {
+        &__list {
+            flex-direction: column;
+        }
+
+        
+        &__item + &__item {
+            margin-left: 0px;
+        }
+
+        &__item {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 40px;
+            padding-left: 17px;
+            
+        }
+    }
+
+    .services-box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 
+
+@media only screen and (max-width:768px) {
+
+    .our-services {
+        padding-top: 80px;
+        background-image: url(../images/our-services-back.png);
+        background-repeat: no-repeat;
+        background-size: 10px 974px;
+        background-position-x: 10%;
+        
+    }
+}
+
+@media only screen and (max-width:540px) {
+
+    .our-services {
+        padding-top: 80px;
+        background-image: url(../images/our-services-back.png);
+        background-repeat: no-repeat;
+        background-size: 0px 0px;
+        background-position-x: 15%;
+        
+    }
+
+    .services-container {
+        &__item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
