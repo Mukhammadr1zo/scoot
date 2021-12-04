@@ -1,0 +1,97 @@
+.footer-container {
+    margin-bottom: 10px;
+    background-color: $dark-grey;
+    display: flex;
+    align-items: center;
+
+    .logo {
+        padding-left: 88px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-left: 58px;
+        
+    }
+  
+    &__item + &__item {
+        margin-left: 32px;
+    }
+    
+    &__link {
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 25px;
+        color: $grey;
+        text-decoration: none;
+          
+    }
+  
+    &__link:hover {
+        color: $dark-yellow;
+    }
+  
+    &__link:active {
+        color: $grey;
+    }
+}
+
+.footer-box {
+    margin-left: auto;
+    margin-right: 20px;
+
+    &__link + &__link {
+        margin-left: 24px;
+    }
+
+    &__img:hover path {
+        fill: $white;
+    }
+}
+
+
+@media only screen and (max-width:675px) {
+    .footer-container {
+        flex-direction: column;
+
+        &__list {
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            text-align: center;
+            padding-bottom: 85px;
+        }
+
+        &__item {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 16px;
+        }
+        
+        &__item + &__item {
+            margin-left: 0px;
+        }
+
+        .logo {
+            margin: 0;
+            padding: 0;
+            padding-top: 64px;
+            padding-bottom: 40px;
+        }
+    }
+
+
+    .footer-box {
+        margin-right: auto;
+        margin-bottom: 88px;
+
+    }
+}

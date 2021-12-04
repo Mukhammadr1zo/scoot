@@ -1,0 +1,48 @@
+.aside-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $dark-blue;
+    background-image: url(../../images/aside.png);
+    background-repeat: no-repeat;
+    background-position-y: 150px;
+    background-position-x: 250px;
+    padding: 102px 105px;
+
+    &__heading {
+        margin: 0;
+        padding: 0;
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        color: $white;
+        width: 100%;
+        max-width: 485px;
+    
+    }
+}
+
+.aside-box {
+    display: flex;
+    flex-shrink: 0;
+    
+    &__link + &__link {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width:1004px) {
+    .aside-container {
+        flex-direction: column;
+        text-align: center;
+
+        &__heading {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+    }
+
+    
+}
